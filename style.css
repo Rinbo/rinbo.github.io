@@ -1,11 +1,64 @@
+:root {
+  --bg-color: white;
+  --heading-color: #333;
+  --navbar-color: #333;
+}
+
 h1 {
-    color: #0088FF;
+    color: var(--heading-color);
     text-align: center;
     font-weight: bold;
     font-size: 48px;
+    text-transform: uppercase;
   }
 
-table {
-  color: #FFFFFF;
-  text-transform: uppercase;  
+body {
+  background-color:var(--bg-color);
+}
+
+.main-body {
+  margin-top: 60px;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--navbar-color);
+  color: #AAA;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  font-size: 18px;  
+  height: 50px;
+  box-shadow: 4px 0px 40px #171030;  
+}
+
+.navbar a {  
+  display: inline;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px;
+  height: 50px;  
+  }
+
+.col-left {
+  text-align: left;
+  margin: auto;
+}
+
+.col-right {
+  text-align: right;
+  margin: auto;
 }
