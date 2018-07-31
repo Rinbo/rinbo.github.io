@@ -1,7 +1,12 @@
 :root {
-  --bg-color: white;
-  --heading-color: #333;
-  --navbar-color: #333;
+  /*Colors*/
+  --bg-color:#e0e2e6;
+  --heading-color: #271404;
+  --navbar-bgcolor: #536c9e;
+  --shadow-color: #7f837f;
+  --navbar-tcolor: #f2f2f2;
+  /*Font Size*/
+  --base-size: 16px;
 }
 
 h1 {
@@ -10,32 +15,72 @@ h1 {
     font-weight: bold;
     font-size: 48px;
     text-transform: uppercase;
+    box-shadow: 3px 3px 40px var(--shadow-color);
+    padding: 15px;
+      
   }
 
 body {
+  /*background-color:var(--bg-color);
+  background-image: url("http://hotemailtemplates.com/templates/Free/wallpapers/1680x1050/Glowing%20Background.jpg");
+  background-repeat: repeat-y;
+  background-position: center top;*/
   background-color:var(--bg-color);
 }
 
 .main-body {
-  margin-top: 60px;
-  
+  margin-top: 70px;  
+}
+
+.text-section {
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 40px var(--shadow-color);
+  padding: 15px;
+  color: var(--heading-color);
+  font-size: var(--base-size);  
+}
+
+.sidebar {  
+  position: fixed;  
+  left: 10%;
+  top: 30%;
+  width: 170px;
+  height: 400px;
+  overflow: visible;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: var(--navbar-bgcolor);
+  color: var(--navbar-tcolor);
+  font-size: var(--base-size);
+  box-shadow: 4px 4px 40px var(--shadow-color);
+  text-transform: capitalize;
+}
+li {
+  align-self: left;
+}
+.sidebar > ul {
+  padding-top: 80px;
+  text-align: left;
+  margin-left: -10px;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: var(--navbar-color);
-  color: #AAA;
+  background-color: var(--navbar-bgcolor);
+  color: var(--navbar-tcolor);
   position: fixed; 
-  top: 0; 
+  top: 0;
+  right: auto; 
   width: 100%; 
   font-size: 18px;  
   height: 50px;
-  box-shadow: 4px 0px 40px #171030;  
+  box-shadow: 0px 5px 40px var(--shadow-color);   
 }
 
 .navbar a {  
   display: inline;
-  color: #f2f2f2;
+  color: var(--navbar-tcolor);
   text-align: left;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,4 +106,14 @@ body {
 .col-right {
   text-align: right;
   margin: auto;
+}
+
+.img {
+  position: relative;
+  overflow: visible;
+  display: block;
+  height: auto;  
+  width: 120px;
+  margin: -65px auto;
+  border-radius: 50%;
 }
