@@ -4,19 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- load MUI -->
     <link href="//cdn.muicss.com/mui-0.9.39/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
     <script src="//cdn.muicss.com/mui-0.9.39/js/mui.min.js"></script>
-    <script>
-      window.addEventListener('load', function() {
-        // add button dynamically
-        var buttonEl = document.createElement('button');
-        buttonEl.className = 'mui-btn mui-btn--primary mui-btn--raised';
-        buttonEl.innerHTML = 'My dynamic button';
-        document.body.appendChild(buttonEl);
-      });
-    </script>
+    <title>The Sandbox</title>
   </head>
   <body>
+    <header>
+      <nav class="mui-appbar">
+        <table width="60%" align="center"> 
+          <tr style="vertical-align: middle;">
+            <td class="mui--appbar-height"><a href="index.html" class="mui--text-light">Home</a></td>
+            <td class="mui--appbar-height" align="right"><a href="about.html" target="_self" class="mui--text-light">About</a></td>
+          </tr>
+        </table>
+      </nav>
+    </header>
+    <section id="main-body" class="mui-container">
+      <h1>The Sandbox</h1>
+    </section>
   </body>
 </html>
