@@ -1,0 +1,71 @@
+:root {
+    --body-bg-color: lightgray;
+    font-family: 'Indie Flower', cursive;    
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;   
+    color: white;
+    
+}
+
+#main {
+    background-color: var(--body-bg-color);   
+    color: white;
+    margin: auto;    
+    max-width: 97%;
+    border: solid 5px white;
+    border-radius: 15px 50px;
+    text-align: center;
+      
+}
+
+#title {
+    font-size: 24px;   
+}
+#title > p {
+    margin-top: -60px;
+}
+
+#img-div {
+    margin: auto;
+    max-width: 600px;   
+}
+
+#image {
+    margin: auto;
+    border: solid 5px white;
+    border-radius: 15px 15px 0 0;
+    max-width: 94%;
+    display: block;
+    height: auto;
+    
+}
+
+#img-caption {
+    max-width: 94%;
+    text-align: center;
+    background-color: white;
+    font-style: italic;
+    font-size: 18px;
+    color: lightgray;
+    margin: auto;
+    border: solid 5px white;
+     
+}
+
+#tribute-info {
+    margin: auto;
+    font-size: 22px;
+    max-width: 600px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+#tribute-link {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
