@@ -15,10 +15,130 @@
     </header>
     <section id="main-section">
         <p id="description">Let me know about your passion for mathematics</p>
+        <form action="#" id="survey-form">
+            <div id="form-area">
+                <div class="row-element">
+                    <div class="left-tab"><label for="name" id="name-label">Name:</label></div>
+                    <div class="right-tab"><input type="text" placeholder="Enter your name" required name="name" id="name"></div>
+                </div>
 
+                <div class="row-element">
+                    <div class="left-tab"><label for="email" id="email-label">Email:</label></div>
+                    <div class="right-tab"><input type="email" placeholder="Enter your Email" required name="email" id="email"></div>
+                </div>
+                
+                <div class="row-element">
+                    <div class="left-tab"><label for="age" id="number-label">Age:</label></div>
+                    <div class="right-tab"><input type="number" placeholder="Enter your age" required min="1" max="125" name="age" id="number"></div>
+                </div>
 
+                <div class="row-element">
+                    <div class="left-tab"><label for="occupation">What do you do for a living?</label></div>
+                    <div class="right-tab">
+                        <select id="dropdown" name="occupation">
+                            <option disabled value>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full time job</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row-element" style="margin-top: 30px;">
+                    <div class="left-tab"><label for="fav-field">Which is your favorite field in mathematics?</label></div>
+                    <div class="right-tab">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="1" type="radio" class="radio">
+                                    Algebra                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="2" type="radio" class="radio">
+                                    Calculus                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="3" type="radio" class="radio">
+                                    Geometry                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="4" type="radio" class="radio">
+                                    Number theory                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="5" type="radio" class="radio">
+                                    Combinatorics                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="radio-buttons" value="6" type="radio" class="radio">
+                                    Other                                        
+                                </label>
+                            </li>       
+                        </ul>                        
+                    </div>    
+                </div>
 
+                <div class="row-element" style="margin-top: 20px;">
+                    <div class="left-tab"><label for="fav-eq">Select your favorite equations:</label></div>
+                    <div class="right-tab">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="1" type="checkbox" class="radio">
+                                    Einstein field equations                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="2" type="checkbox" class="radio">
+                                    Schrödinger equation                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="3" type="checkbox" class="radio">
+                                    Euler's identity                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="4" type="checkbox" class="radio">
+                                    Dirac equation                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="5" type="checkbox" class="radio">
+                                    Euler–Riemann zeta function                                        
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input name="checkboxes" value="6" type="checkbox" class="radio">
+                                    Other                                        
+                                </label>
+                            </li>       
+                        </ul>                        
+                    </div>    
+                </div>
 
+                <div class="row-element" style="margin-top: 30px;">
+                    <div class="left-tab"><label for="comments">Write about your passion for mathematics:</label></div>
+                    <div class="right-tab"><textarea placeholder="Enter your prose here..." id="comments" name="comments"></textarea></div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;"><button id="submit" type="submit">Submit</button></div>
+            </div>        
+        </form>
     </section>    
 </body>
 </html>
