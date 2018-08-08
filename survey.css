@@ -93,7 +93,7 @@ input[type="checkbox"] {
 }
 
 #comments {
-    max-width: 250px;
+    width: 230px;
     height: 100px;
     text-align: top;
     resize: vertical;
