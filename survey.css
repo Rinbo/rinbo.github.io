@@ -1,0 +1,33 @@
+:root {
+    --base-color: #252525;
+    --font-color: #cccccc;
+    --top-color: #303030;
+}
+body {
+    background-color: var(--base-color);
+    color: var(--font-color);
+    font-family: 'Share Tech', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#title {
+    margin: 100px auto 30px;    
+    text-align: center;    
+    text-transform: uppercase;
+}
+
+#main-section {
+    background: var(--top-color);
+    margin: auto auto 30px;
+    border: solid 2px var(--font-color);
+    border-radius: 15px 50px;
+    max-width: 60%;
+    height: 800px;
+}
+
+#description {
+    text-align: center;
+}
