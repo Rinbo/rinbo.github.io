@@ -3,27 +3,82 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Firworks inc.</title>
+    <title>Explochromatic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Merienda|Permanent+Marker|Righteous" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="fireworks.css" />
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    <!--
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 800px)" href="assets/css/fireworks-min-800.css" />
+    -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fireworks.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fw-anim.css" />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+        #products {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
 </head>
 <body>
     <header id="header">
         <nav id="nav-bar">
-            <div class="navbar-left">Fireworks inc. -LOGO-</div>
+            <div class="navbar-left"><a href="#title-anchor"><img id="header-img" src="assets/images/EC-logo-small.png"></a></div>
             <div class="navbar-right">
-                <div class="nav-link">Getting started</div>
-                <div class="nav-link">Products</div>
-                <div class="nav-link">How it works</div>
+                <a class="nav-link" href="#getting-started-anchor">Getting started</a>
+                <a class="nav-link" href="#product-anchor">Products</a>
+                <a class="nav-link" href="#how-it-works">How it works</a>
             </div>
         </nav>
     </header>
 
-    <section style="padding-top: 70px;">
-        <h1>FIREWORKS INC.</h1>
+    <section class="title">
+        <a class="anchor" id="title-anchor"></a>
+        <img src="assets/images/EC-logo-small.png" id="title-img">
+        <h1>Explochromatic</h1>        
+    </section>
+    <div class="fws">
+        <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+    </div>
+    <section id="getting-started">
+        <a class="anchor" id="getting-started-anchor"></a>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input name="email" type="email" id="email" placeholder="Enter your email-address" required>
+            <input id="submit" type="submit" value="GET STARTED">
+        </form>
+    </section>
+    <section id="products">
+        <a class="anchor" id="product-anchor"></a>
+        <div class="product-main">
+            <div class="product-title">Badda-bing Badda-bang</div>
+            <div class="product-info">Sure to knock your ears off</div>
+            <div class="product-price">$200</div>
+            <div><img src="assets/images/prod1.jpg" class="prod-img"></div>
+        </div>
+        <div class="product-main">
+                <div class="product-title">Big Kaboozo</div>
+                <div class="product-info">Reverberations guaranteed</div>
+                <div class="product-price">$300</div>
+                <div><img src="assets/images/prod2.jpg" class="prod-img"></div>
+        </div>
+        <div class="product-main">
+                <div class="product-title">Purple Rain</div>
+                <div class="product-info">Purple rain, purple rain</div>
+                <div class="product-price">$400</div>
+                <div><img src="assets/images/prod3.jpg" class="prod-img"></div>
+        </div>
     </section>
     
+    <section id="video-embed" class="anchor">
+        <a class="anchor" id="how-it-works"></a>
+        How it works                
+        <iframe id="video" src="https://www.youtube.com/embed/5eLcHJLDlI8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <footer id="footer">Copyright 2018 &copy; Explochromatic</footer>
+
 </body>
 </html> 
