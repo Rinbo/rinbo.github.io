@@ -157,6 +157,7 @@ li a:hover {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-gap: 30px;
+    margin-bottom: 250px;
   } 
 
 }
@@ -225,7 +226,7 @@ li a:hover {
 a.anchor {
   display: block;
   position: relative;
-  top: -50px;
+  top: -45px;
   visibility: hidden;
 }
 
