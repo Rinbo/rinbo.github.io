@@ -5,8 +5,14 @@
   --navbar-bgcolor: #536c9e;
   --shadow-color: #7f837f;
   --navbar-tcolor: #f2f2f2;
-  /*Font Size*/
+  --project-border: black;
+  --project-info: #536c9e;
+  --profile-link: #00cccc;
+  --project-title: rgba(220, 220, 220, 0.8);
+
+  /*Font properties*/
   --base-size: 16px;
+  --main-font: 'Share Tech', sans-serif;
 }
 
 h1 {
@@ -16,128 +22,213 @@ h1 {
     font-size: 48px;
     text-transform: uppercase;
     box-shadow: 3px 3px 40px var(--shadow-color);
-    padding: 15px;
-      
+    padding: 15px;      
   }
 
-body {
-  /*background-color:var(--bg-color);
-  background-image: url("http://hotemailtemplates.com/templates/Free/wallpapers/1680x1050/Glowing%20Background.jpg");
-  background-repeat: repeat-y;
-  background-position: center top;*/
+body {  
   background-color:var(--bg-color);
+  font-family: var(--main-font);
 }
 
-@media (max-width: 1100px) {
-  .sidebar {
-    position: absolute;  
-    bottom: -450px;
-    left: 0px;
-    width: 60%;
-    height: auto;
-    overflow: visible;
-    padding: 15px;
-    margin-top: 30px;
-    background-color: var(--navbar-bgcolor);
-    color: var(--navbar-tcolor);
-    font-size: var(--base-size);
-    box-shadow: 4px 4px 40px var(--shadow-color);
-    text-transform: capitalize;
-    z-index: -1;
-    margin-bottom: 10%; 
-  }
-}
-
-@media (min-width: 1100px) {
-  .sidebar {  
-      position: absolute;  
-      top: 20px;
-      left: -235px;
-      width: 170px;
-      height: 400px;
-      overflow: visible;
-      padding: 15px;
-      margin-top: 30px;
-      background-color: var(--navbar-bgcolor);
-      color: var(--navbar-tcolor);
-      font-size: var(--base-size);
-      box-shadow: 4px 4px 40px var(--shadow-color);
-      text-transform: capitalize;
-      z-index: -1;  
-    }
-  }
-
-  
-.sidebar > ul {
-  padding-top: 80px;
-  text-align: left;
-  margin-left: -10px;
-}
-
-.main-body {
-  margin-top: 70px;  
-}
-
-.text-section {
-  max-width: 700px;
-  margin: 50px auto;
-  box-shadow: 3px 3px 40px var(--shadow-color);
-  padding: 15px;
+a {
+  text-decoration: none;
   color: var(--heading-color);
-  font-size: var(--base-size);
-  position: relative;
-    
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: var(--navbar-bgcolor);
-  color: var(--navbar-tcolor);
-  position: fixed; 
-  top: 0;
-  right: auto; 
-  width: 100%; 
-  font-size: 18px;  
-  height: 50px;
-  box-shadow: 0px 5px 40px var(--shadow-color);   
+a:visited {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+  
+.main-body {
+  margin: 100px auto;
+  max-width: 800px;  
 }
 
-.navbar a {  
-  display: inline;
-  color: var(--navbar-tcolor);
-  text-align: left;
-  padding: 14px 16px;
+#bio-description {
+  grid-area: bio;
+  justify-self: center;  
+}
+
+#bio-img {
+  grid-area: bio-img;
+  justify-self: center;
+}
+
+#bio-media {
+  grid-area: bio-media;
+  justify-self: center;
+  text-align: center; 
+}
+
+li {
+  
+  list-style-position: outside;
+  padding-left: 0;
+  margin-left: -39px;
+}
+
+li > a, a:visited {
+  color: var(--profile-link);
   text-decoration: none;
 }
 
-.navbar a:hover {
-  background: #ddd;
+li a:hover {
   color: black;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 2px;
-  height: 50px;  
+.project-main:hover {
+  transform: scale(1.05);  
+}
+
+.project-main {
+  width: 250px;
+  height: 250px;  
+  border: solid var(--project-border);
+  justify-self: center;  
+  margin: auto; 
+  background-image: url("/assets/images/prod1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project-title {
+  width: 80%;
+  height: auto; 
+  background-color: var(--project-title);
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  margin: 15px auto;
+  text-transform: uppercase;
+}
+
+.project-info {
+  position: absolute;
+  text-align: center;
+  width: 92%;
+  padding: 10px;
+  background-color: var(--project-title);
+  color: var(--heading-color);
+  bottom: 0;
+  font-size: 17px;
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    color: var(--heading-color);
+    position: fixed; 
+    top: 0;
+    left: 0;   
+    width: 100px;
+    padding-left: 20px; 
+    font-size: 18px;  
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*box-shadow: 0px 4px 5px var(--shadow-color);   */
   }
 
-.col-left {
-  text-align: left;
-  margin: auto;
+  #profile-section {
+    width: 95%;
+    height: 90vh;
+    margin: 50px auto;
+    padding: 15px;
+    color: var(--heading-color);
+    font-size: 18px;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "bio bio-img"
+        "bio bio-media"
+        "bio bio-media";   
+  }
+  
+  #projects {
+    width: 95%;  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+  } 
+
 }
 
-.col-right {
-  text-align: right;
-  margin: auto;
+@media (max-width: 700px) {
+  .navbar {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    color: var(--heading-color);
+    position: fixed; 
+    top: -1px;
+    left: 0;   
+    width: 100%;     
+    font-size: 18px;  
+    height: 60px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+    /*box-shadow: 0px 4px 5px var(--shadow-color);   */
+  }
+
+  #profile-section {
+    width: 85%;
+    height: auto;    
+    margin: auto;
+    padding: 15px;
+    color: var(--heading-color);
+    font-size: 18px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto;    
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "bio-img"
+        "bio"
+        "bio-media";   
+  }
+
+  #projects {
+    width: 95%;  
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(auto, 5);
+    grid-gap: 30px;
+    margin: 100px auto;
+  }
+    
 }
 
+.navbar a {      
+  padding: 14px;  
+}
+
+.nav-link:hover {  
+  opacity: 0.7;
+  transform: scale(1.2);
+}
 .img {
-  position: relative;
-  overflow: visible;
-  display: block;
+  display: block;    
   height: auto;  
-  width: 120px;
-  margin: -65px auto;
+  width: 200px;  
   border-radius: 50%;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+#footer {
+  text-align: center;  
 }

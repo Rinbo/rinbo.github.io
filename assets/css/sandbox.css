@@ -1,0 +1,143 @@
+:root {
+  /*Colors*/
+  --bg-color:#e0e2e6;
+  --heading-color: #271404;
+  --navbar-bgcolor: #536c9e;
+  --shadow-color: #7f837f;
+  --navbar-tcolor: #f2f2f2;
+  /*Font Size*/
+  --base-size: 16px;
+}
+
+h1 {
+    color: var(--heading-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 40px var(--shadow-color);
+    padding: 15px;
+      
+  }
+
+body {
+  /*background-color:var(--bg-color);
+  background-image: url("http://hotemailtemplates.com/templates/Free/wallpapers/1680x1050/Glowing%20Background.jpg");
+  background-repeat: repeat-y;
+  background-position: center top;*/
+  background-color:var(--bg-color);
+}
+
+@media (max-width: 1100px) {
+  .sidebar {
+    position: absolute;  
+    bottom: -450px;
+    left: 0px;
+    width: 60%;
+    height: auto;
+    overflow: visible;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: var(--navbar-bgcolor);
+    color: var(--navbar-tcolor);
+    font-size: var(--base-size);
+    box-shadow: 4px 4px 40px var(--shadow-color);
+    text-transform: capitalize;
+    z-index: -1;
+    margin-bottom: 10%; 
+  }
+}
+
+@media (min-width: 1100px) {
+  .sidebar {  
+      position: absolute;  
+      top: 20px;
+      left: -235px;
+      width: 170px;
+      height: 400px;
+      overflow: visible;
+      padding: 15px;
+      margin-top: 30px;
+      background-color: var(--navbar-bgcolor);
+      color: var(--navbar-tcolor);
+      font-size: var(--base-size);
+      box-shadow: 4px 4px 40px var(--shadow-color);
+      text-transform: capitalize;
+      z-index: -1;  
+    }
+  }
+
+  
+.sidebar > ul {
+  padding-top: 80px;
+  text-align: left;
+  margin-left: -10px;
+}
+
+.main-body {
+  margin-top: 70px;  
+}
+
+.text-section {
+  max-width: 700px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 40px var(--shadow-color);
+  padding: 15px;
+  color: var(--heading-color);
+  font-size: var(--base-size);
+  position: relative;
+    
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--navbar-bgcolor);
+  color: var(--navbar-tcolor);
+  position: fixed; 
+  top: 0;
+  right: auto; 
+  width: 100%; 
+  font-size: 18px;  
+  height: 50px;
+  box-shadow: 0px 5px 40px var(--shadow-color);   
+}
+
+.navbar a {  
+  display: inline;
+  color: var(--navbar-tcolor);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2px;
+  height: 50px;  
+  }
+
+.col-left {
+  text-align: left;
+  margin: auto;
+}
+
+.col-right {
+  text-align: right;
+  margin: auto;
+}
+
+.img {
+  position: relative;
+  overflow: visible;
+  display: block;
+  height: auto;  
+  width: 120px;
+  margin: -65px auto;
+  border-radius: 50%;
+}
