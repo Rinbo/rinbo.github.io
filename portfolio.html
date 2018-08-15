@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
     <link rel="icon" href="assets/images/EC-logo-small.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/css/social.css">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <title>Robin Börjesson</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="#profile-anchor" class="fas fa-home fa-2x nav-link" style="color: #00cccc;"></a>
+      <nav id="navbar">
+        <a href="#welcome-section" class="fas fa-home fa-2x nav-link" style="color: #00cccc;"></a>
         <a href="#project-anchor" class="fas fa-project-diagram fa-2x nav-link" style="color: #00cccc;"></a>
         <a href="mailto:robin.b@outlook.com" class="fas fa-at fa-2x nav-link" style="color: #00cccc;"></a>
       </nav>
     </header>
     <section class="main-body">
-        <a class="anchor" id="profile-anchor"></a>
-        <div id="profile-section">
+        <div id="welcome-section">
           <div id="bio-description">
-            <p style="font-weight: bold;">Robin Börjesson</p>
+            <h1>Robin Börjesson</h1>
             <ul>
               <li>Master of Science in Mechanical Engineering at 
                 <a href="https://www.topuniversities.com/universities/chalmers-university-technology" target="_blank">Chalmers Univeristy of Technology</a></li>
@@ -45,7 +45,7 @@
           </div>
           <div id="bio-media">
               <a href="https://www.linkedin.com/in/robin-b%C3%B6rjesson/" class="fa fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/Rinbo" class="fa fa-github" target="_blank"></a>
+              <a href="https://github.com/Rinbo" class="fa fa-github" target="_blank" id="profile-link"></a>
               <a href="https://www.facebook.com/robindjuret" class="fa fa-facebook" target="_blank"></a>
               <a href="https://twitter.com/BorjessonR" class="fa fa-twitter" target="_blank"></a>
               <a href="https://plus.google.com/u/0/110462434175740795086" class="fa fa-google" target="_blank"></a>              
@@ -57,31 +57,31 @@
       <a class="anchor" id="project-anchor"></a>
       <div id="projects">          
           <a href="fireworks.html" target="_blank">
-            <div class="project-main" style="background-image: url('/assets/images/prod1.jpg');">
+            <div class="project-tile" style="background-image: url('/assets/images/prod1.jpg');">
                 <div class="project-title">Explochromatic</div>
                 <div class="project-info">Product Landing Page</div>                            
             </div>
           </a>
           <a href="survey.html" target="_blank">
-              <div class="project-main" style="background-image: url('/assets/images/math.jpg');">
+              <div class="project-tile" style="background-image: url('/assets/images/math.jpg');">
                   <div class="project-title">Mathematics</div>
                   <div class="project-info">Survey Page</div>                            
               </div>
           </a>
           <a href="tribute.html" target="_blank">
-              <div class="project-main" style="background-image: url('/assets/images/tree-bw.jpg');">
+              <div class="project-tile" style="background-image: url('/assets/images/tree-bw.jpg');">
                   <div class="project-title">The Tree</div>
                   <div class="project-info">A tribute page</div>                            
               </div>
           </a>
           <a href="sandbox.html" target="_blank">
-              <div class="project-main" style="background-image: url('/assets/images/sandbox.jpg');">
+              <div class="project-tile" style="background-image: url('/assets/images/sandbox.jpg');">
                   <div class="project-title">The sandbox</div>
                   <div class="project-info">HTML/CSS experimentation page</div>                            
               </div>
           </a>
           <a href="https://rr-repo.herokuapp.com/" target="_blank">
-              <div class="project-main" style="background-image: url('/assets/images/rr-blog.jpg');">
+              <div class="project-tile" style="background-image: url('/assets/images/rr-blog.jpg');">
                   <div class="project-title">My Blog</div>
                   <div class="project-info">Sharing my thoughts about whatever comes to mind</div>                            
               </div>
