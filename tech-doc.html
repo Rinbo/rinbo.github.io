@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ruby Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/tech-doc.css" />
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <header>Ruby Documentation</header>
+        <ul> 
+            <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+            <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
+            <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>            
+            <a class="nav-link" href="#Variable_scope" rel="internal"><li>Variable scope</li></a>            
+            <a class="nav-link" href="#Constants" rel="internal"><li>Constants</li></a>
+            <a class="nav-link" href="#Data_types" rel="internal"><li>Data types</li></a>
+            <a class="nav-link" href="#Conditionals" rel="internal"><li>Conditionals</li></a>            
+            <a class="nav-link" href="#Function_declarations" rel="internal"><li>Function declarations</li></a>
+            <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+                <article>                      
+                <p>Ruby is a programming language with the following properties:</p>            
+                <li>Dynamic - Programming behaviours are executed at runtime</li>
+                <li>Interpreted - Most instructions executed directly without first compiling them into machine code</li>
+                <li>Reflective - Capable of modifying its strcture and behaviour at runtime</li>
+                <li>Object-oriented - Objects containing data and methods instantiated from classes to enable a modularized code base</li>
+                <li>General purpure - Used in a wide variaty of domains.</li>
+                <p>It was created in 1995 by Yukihiro Matsumoto.</p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Hello_world">
+            <header>Hello World</header>
+                <article>
+                    <p>To print out "Hello World" the console:</p>
+                    <code>puts "Hello World"</code>
+                    <p>'Puts'is short for put string. It ends with a newline (\n) returns undefined.</p>
+                </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+                <article>
+                    <p>Variables are declared without needing to explicitly define the type. It is clear to ruby what type
+                        the variable is from how you declare it</p>
+<code>a = "I am a string" 
+b = 3 #Fixnum
+c= 3.3 #Float</code>
+                    <p>Everything in ruby is an object - which means that each time you declare a variable as in the case above,
+                        these variables have access to a wide variaty of methods inherant in the type of object that is instantiated as.
+                    </p>
+                </article>
+        </section>
+
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+                <article>
+                    <p>There are four levels of variable scope:</p>
+<code>g = "I am a global variable" #defined outside of any Function
+def someFunction
+    l =  "I am a local variable" #can only be accessed from within the function
+end
+
+def class MyClass
+    @@class_var = "I am a class variable" #Available to any instantiation of the class
+    def classFunction
+        @instance_var = "I am an instance variable" #Available to every function within an instance of the class
+    end
+end</code>                
+                </article>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+                <article>
+                    <p>A Ruby constant is like a variable, 
+                        except that its value is supposed to remain constant for the duration of the program. 
+                        The Ruby interpreter does not actually enforce the constancy of constants, but it does 
+                        issue a warning if a program changes the value of a constant.</p>
+<code>A_CONSTANT = "I am a constant"</code>
+                    <p>Ruby knows that you have declared a constant from the all caps declaration.</p>
+                </article>
+        </section>
+
+        <section class="main-section" id="Data_types">
+                <header>Data types</header>
+                <article>
+                    <p>These are the basic data types in ruby:</p>
+<code>s = "I am a string"
+fixnum = 3 #number Fixnum (integer)
+float = 3.3 #number Float
+array = ["a", 1, 2, "hello"] #Array
+hash = {name: "Robin", lastName: "Bson"} #Hash
+s = :unique #Symbol
+I_Am_True = true #bolean
+</code>
+                    <p>Then there are blocks which as far as I know is unique to ruby:</p>
+<code>{puts "Hello yo"}
+#or
+do
+    puts "Hello yo"
+end
+# Pass block to function without having to define it as a function parameter (called when yielded)
+def f
+    yield
+end
+f {puts "I am a block"} # => I am a block</code>
+                </article>
+        </section>
+        
+        <section class="main-section" id="Conditionals">
+            <header>Conditionals</header>
+            <article>
+                <p>If statements:</p>
+<code>if x > 2
+    puts "x is greater than 2"
+elsif x < 2
+    puts "x is less than 2"
+else
+    puts "x is 2"
+end</code>
+                <p>While loop:</p>
+<code>while true
+    puts "Infinite loop"
+end</code>
+                <p>For-loop</p>
+<code>for i in (1..5)
+    puts i
+    i += 1;
+end
+#same result
+(1..5).each {|i| puts i}
+</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
+            <article>
+                <p>Declaring and using a function is simple enough:</p>
+<code>def quad(x)
+    x**4
+end
+quad(4) # => 256</code>
+                <p>Notice abscence of return-keyword. A ruby function/method returns the last line of the function by default</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    <p>This site has been made to practice writing technical doucumentation pages. For a complete guide
+                        on the ruby languate i recommend <a href="https://ruby-doc.org/">Ruby-doc.org</a>.
+                    </p>
+    
+    
+                </article>
+            </section>
+
+
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
